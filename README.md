@@ -1,6 +1,4 @@
-# Value-at-Risk
-
-# Monte Carlo Stock Price Simulation Analysis
+# Value at Risk. Monte Carlo Stock Price Simulation Analysis
 
 A Python-based Monte Carlo simulation framework for modeling stock price movements using geometric Brownian motion (Wiener process). This project analyzes five major tech stocks to generate probabilistic price paths and assess risk profiles over a one-year horizon.
 
