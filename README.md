@@ -13,18 +13,16 @@ It focuses on five major technology stocks — **AAPL, GOOGL, NVDA, AMZN, and UB
 
 The simulation is based on the stochastic differential equation (Wiener process):
 
-$
-dS_t = μS_t , dt + σS_t , dW_t
-$
+$dS_t = μS_t , dt + σS_t , dW_t$
 
 Where:
 
 | Symbol   | Description                                                              |
 | :------- | :----------------------------------------------------------------------- |
-| $ S_t $  | Stock price at time *t*                                                  |
-| $ μ $    | Annualized drift (expected return)                                       |
-| $ σ $    | Annualized volatility (standard deviation of returns)                    |
-| $ dW_t $ | Wiener process increment (random term from standard normal distribution) |
+| $S_t$  | Stock price at time *t*                                                  |
+| $μ$    | Annualized drift (expected return)                                       |
+| $σ$    | Annualized volatility (standard deviation of returns)                    |
+| $dW_t$ | Wiener process increment (random term from standard normal distribution) |
 
 ---
 
@@ -37,7 +35,7 @@ Where:
 
 2. **Monte Carlo Simulation**
 
-   * Generate thousands of **randomized price paths** per stock (e.g., 100 000 simulations).
+   * Generate thousands of **randomized price paths** per stock (e.g., 100,000 simulations).
    * Compute confidence intervals (5th–95th percentiles) to visualize uncertainty.
 
 3. **Risk Evaluation**
@@ -54,7 +52,7 @@ Where:
 | Stock    | Volatility (σ) | Median Return | Risk Spread | Observation                              |
 | -------- | -------------- | ------------- | ----------- | ---------------------------------------- |
 | **NVDA** | 52.6%          | +45.1%        | ~190%       | Most volatile, extreme outcomes possible |
-| **AAPL** | 28%            | +12%          | ~96%       | Stable, consistent market outperformer   |
+| **AAPL** | 28%            | +12%          | ~96%        | Stable, consistent market outperformer   |
 | **GOOG** | 31%            | +18%          | ~107%       | Best risk-adjusted performer             |
 | **AMZN** | 33%            | +1.8%         | ~123%       | Unfavorable risk–reward ratio            |
 | **UBER** | 45%            | +7.4%         | ~170%       | High downside risk, modest returns       |
@@ -65,11 +63,11 @@ Where:
 
 | Stock    | 5th Percentile Return | Interpretation                        |
 | -------- | --------------------- | ------------------------------------- |
-| **UBER** | –50.3%                | Highest downside exposure             |
-| **AMZN** | –43.0%                | Substantial risk, low reward          |
-| **NVDA** | –37.6%                | High risk, high potential return      |
-| **AAPL** | –29.9%                | Moderate downside, stable performance |
-| **GOOG** | –29.0%                | Most resilient under stress           |
+| **UBER** | -50.3%                | Highest downside exposure             |
+| **AMZN** | -43.0%                | Substantial risk, low reward          |
+| **NVDA** | -37.6%                | High risk, high potential return      |
+| **AAPL** | -29.9%                | Moderate downside, stable performance |
+| **GOOG** | -29.0%                | Most resilient under stress           |
 
 ---
 
@@ -113,4 +111,3 @@ pip install numpy pandas matplotlib yfinance
 
 This project is released under the **MIT License**.
 You’re free to use, modify, and distribute it with attribution.
-
